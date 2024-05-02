@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "keepapp_backend": {
+      "main": "src/keepapp_backend/main.mo",
+      "type": "motoko"
+    },
+    "keepapp_frontend": {
+      "dependencies": [
+        "keepapp_backend"
+      ],
+      "source": [
+        "src/keepapp_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "keepapp_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
